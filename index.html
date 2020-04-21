@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+    <script src="https://r-rudolf.github.io/irany-a-mars/phaser-3-15-1.min.js"></script>
+    <script src="http://localhost:8000/phaser-3-15-1.min.js"></script>
 </head>
 <body>
 
@@ -26,11 +27,15 @@
 
     function preload ()
     {
-        this.load.setBaseURL('http://labs.phaser.io');
+        if(window.location.href.match("github.io")){
+            this.load.setBaseURL('https://r-rudolf.github.io/irany-a-mars/');
+        }else{
+            this.load.setBaseURL('http://localhost:8000/');
+        }
 
-        this.load.image('sky', 'assets/skies/space3.png');
-        this.load.image('logo', 'assets/sprites/phaser3-logo.png');
-        this.load.image('red', 'assets/particles/red.png');
+        this.load.image('sky', 'assets/space3.png');
+        this.load.image('logo', 'assets/phaser3-logo.png');
+        this.load.image('red', 'assets/red.png');
     }
 
     function create ()

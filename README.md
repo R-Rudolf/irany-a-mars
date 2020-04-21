@@ -9,5 +9,5 @@ Ha van Python3 telepítve a gépre elég csak a következő parancsot kiadni a g
 
 `python -m http.server`
 
-Ezek után egy böngészőben a következő linket megnyitva, már játszhatsz is: http://localhost:8000
-A GitHub repository-ban pedig a gh-pages branch-en fejlesztve pedig egyből látható lesz a következő linken az aktuálisan feltöltött állapot: https://r-rudolf.github.io/irany-a-mars/
+Ezek után egy böngészőben a következő linket megnyitva, már játszhatsz is: [http://localhost:8000]
+A GitHub repository-ban pedig a gh-pages branch-en fejlesztve pedig egyből látható lesz a következő linken az aktuálisan feltöltött állapot: [https://r-rudolf.github.io/irany-a-mars/]
